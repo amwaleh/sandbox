@@ -1,39 +1,28 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import 
 import "./styles.css";
-
-const sine = x => Math.sin(x);
-
-const annoying_loop = () => {
-  for (let i = 0; i < 100; i++) {
-    sine(i);
-  }
-};
+import "semantic-ui-css/semantic.min.css";
+import Card from "./Card";
 
 class App extends Component {
   state = {
-    indicator: 0,
+    indicator: 0
   };
+  // static propType ={
+
+  // }
+
   onMouseMove = () => {
     this.setState(prevState => ({
       indicator: prevState.indicator + 1
     }));
   };
   render() {
-    return (
-      <div className="App">
-        <h1>Hello CodeSandbox</h1>
-        <h2 onMouseMove={this.onMouseMove}>
-          Start editing to see some magic happen!
-        </h2>
-        hello {this.state.indicator}
-      </div>
-    );
+    return <Card />;
   }
 }
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 
-// if 
+// if
