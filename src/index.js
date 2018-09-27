@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./styles.css";
 import "semantic-ui-css/semantic.min.css";
 import Card from "./Card";
+import Profile from "./Profile";
 
 class App extends Component {
   state = {
@@ -18,7 +19,7 @@ class App extends Component {
     }));
   };
   render() {
-    return <Card />;
+    return <Profile />;
   }
 }
 

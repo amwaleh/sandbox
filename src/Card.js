@@ -123,7 +123,7 @@ export default class Card extends React.Component {
           style={{
             minHeight: "700px",
             backgroundImage:
-              "url('https://source.unsplash.com/800x900/?books,smile')",
+              "url('https://source.unsplash.com/800x900/?smile')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundColor: "#000",
@@ -187,7 +187,7 @@ export default class Card extends React.Component {
                 return (
                   <BookCover computer="1" key={Math.random()}>
                     <img
-                      src={`https://source.unsplash.com/300x300/?book ${Math.random()}`}
+                      src={`https://source.unsplash.com/300x300/?code ${Math.random()}`}
                     />
                     <h2>{book.title}</h2>
                   </BookCover>
@@ -198,7 +198,7 @@ export default class Card extends React.Component {
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column mobile="15" computer="7">
+            <Grid.Column mobile="15" computer="7" widescreen="5">
               <StyledContainer textAlign="justified">
                 <Divider color="teal" inverted horizontal>
                   <Header color="olive">Ambition</Header>
