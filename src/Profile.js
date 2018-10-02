@@ -8,7 +8,7 @@ width:100%;
 height:100%;
 min-height: 300px;
 background-image: url(${props =>
-  `'https://source.unsplash.com/300x300/?lady ${Math.random()}'`});
+  `'https://source.unsplash.com/600x300/?${props.topic} ${Math.random()}'`});
 background-repeat: no-repeat;
 background-position: right;
 background-size: cover;
@@ -41,10 +41,50 @@ const Gradient = styled.div`
 export default class Profile extends React.Component {
   render() {
     return (
-      <Grid centered>
-        <Grid.Row>
+      <Grid centered padded="vertically">
+        <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
+          <Grid.Column>
+            <Images topic="iris ">
+              <Gradient />
+            </Images>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
+          <Grid.Column
+            mobile="16"
+            computer="7"
+            verticalAlign="middle"
+            textAlign="justified"
+          >
+            <Header textAlign="mobile center" color="teal">
+              Lorem ipsum dolor sit amet
+            </Header>
+
+            <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+              link mollis pretium. Integer tincidunt
+            </p>
+            <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+              link mollis pretium. Integer tincidunt
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row style={{ minHeight: "500px" }}>
           <Grid.Column computer="4" tablet="15">
-            <Images>
+            <Images topic="candle">
               <Gradient />
             </Images>
           </Grid.Column>
@@ -57,7 +97,7 @@ export default class Profile extends React.Component {
             <Header textAlign="mobile center" color="cyan">
               Lorem ipsum dolor sit amet
             </Header>
-            <p style={{ margin: `10px 20px` }}>
+            <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -70,9 +110,9 @@ export default class Profile extends React.Component {
           </Grid.Column>
         </Grid.Row>
         <divider />
-        <Grid.Row reversed="computer">
+        <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
           <Grid.Column computer="4" tablet="15">
-            <Images>
+            <Images topic="map">
               <Gradient direction={"left"} />
             </Images>
           </Grid.Column>
@@ -85,40 +125,7 @@ export default class Profile extends React.Component {
             <Header textAlign="mobile center" color="olive">
               Lorem ipsum dolor sit amet
             </Header>
-            <p style={{ margin: `10px 20px` }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-
-        <Grid.Row reversed="computer">
-          <Grid.Column
-            mobile="16"
-            computer="7"
-            verticalAlign="middle"
-            textAlign="justified"
-          >
-            <Header textAlign="mobile center" color="teal">
-              Lorem ipsum dolor sit amet
-            </Header>
-            <p style={{ margin: `10px 20px` }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt
-            </p>
-            <p style={{ margin: `10px 20px` }}>
+            <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
