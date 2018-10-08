@@ -44,7 +44,7 @@ export default class Profile extends React.Component {
       <Grid centered padded="vertically">
         <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
           <Grid.Column>
-            <Images topic="iris ">
+            <Images topic="courier,mail,cargo ">
               <Gradient />
             </Images>
           </Grid.Column>
@@ -56,35 +56,78 @@ export default class Profile extends React.Component {
             verticalAlign="middle"
             textAlign="justified"
           >
-            <Header textAlign="mobile center" color="teal">
-              Lorem ipsum dolor sit amet
+            <Header textAlign="mobile center" color="teal" size="large">
+              Do you have a Parcel to send?
             </Header>
 
-            <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt
+            <p style={{ margin: `10px 20px`, fontSize: "1.5rem" }}>
+              We are the number one in the efficient co-ordination and movement
+              of freight in East Africa. Our size and experience allow us to
+              tailor highly competitive solutions for all our customers. Whether
+              you are a small business looking to move less than a container, or
+              an experienced logistics professional looking to improve your air
+              and ocean freight operations, we will deliver a personalized
+              service.
             </p>
-            <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt
+            <p
+              style={{
+                margin: `10px 20px`,
+                fontSize: "1.2rem",
+                lineHeight: "24px"
+              }}
+            >
+              Courier International , we are specialists in shipping. We have
+              extensive customs knowledge and experience. Our wide range of
+              Customs Services support a variety of customs needs, ensuring
+              smooth and efficient clearance processes. Best of all, our customs
+              expertise allows our customers to focus on their core business and
+              gain peace of mind as shipments traverse the globe!
             </p>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row
+          style={{ minHeight: "500px", fontSize: "1rem", lineHeight: "1.8" }}
+        >
+          <Grid.Column computer="4" tablet="15">
+            <Header textAlign="mobile center" color="teal" size="large">
+              WHO WE ARE
+            </Header>
+            <Images topic="courier,mail,cargo">
+              <Gradient style={{ height: "200px" }} />
+              <Segment>
+                We are Specialists in overnight deliveries country wide, same
+                day service within major towns in Kenya, over night deliveries
+                within East African countries and the rest of the world,
+                warehousing and logistics.
+              </Segment>
+            </Images>
+          </Grid.Column>
+          <Grid.Column computer="4" tablet="15">
+            <Header textAlign="mobile center" color="teal" size="large">
+              OUR SERVICES
+            </Header>
+            <Images topic="courier,mail,cargo ">
+              <Gradient>
+                We develop and demonstrate our expertise through our innovative
+                and leading edge approach to delivering the right services.
+                Trust us to do the right thing.
+              </Gradient>
+            </Images>
+          </Grid.Column>
+          <Grid.Column computer="4" tablet="15">
+            <Header textAlign="mobile center" color="teal" size="large">
+              CONTACTS
+            </Header>
+            <Images topic="telephone ">
+              <Gradient />
+              ADRESS: Mwalimu Cooperative Building, Tom Mboya street TELEPHONE:
+              +254 -713 592 975 email: info@courierint.com
+            </Images>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row style={{ minHeight: "500px" }}>
           <Grid.Column computer="4" tablet="15">
-            <Images topic="candle">
+            <Images topic="customs,tax,border">
               <Gradient />
             </Images>
           </Grid.Column>
@@ -94,25 +137,23 @@ export default class Profile extends React.Component {
             verticalAlign="middle"
             textAlign="justified"
           >
-            <Header textAlign="mobile center" color="cyan">
-              Lorem ipsum dolor sit amet
+            <Header textAlign="mobile center" color="cyan" size="large">
+              Customs service
             </Header>
             <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt
+              Courier International , we are specialist in shipping with
+              extensive customs knowledge and experience. Our wide range of
+              Customs Services support a variety of customs needs, ensuring
+              smooth and efficient clearance processes. Best of all, our customs
+              expertise allows our customers to focus on their core business and
+              gain peace of mind as shipments traverse the globe!
             </p>
           </Grid.Column>
         </Grid.Row>
         <divider />
         <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
           <Grid.Column computer="4" tablet="15">
-            <Images topic="map">
+            <Images topic="map,shipping,freight">
               <Gradient direction={"left"} />
             </Images>
           </Grid.Column>
@@ -122,18 +163,17 @@ export default class Profile extends React.Component {
             verticalAlign="middle"
             textAlign="justified"
           >
-            <Header textAlign="mobile center" color="olive">
-              Lorem ipsum dolor sit amet
+            <Header textAlign="mobile center" color="olive" size="large">
+              Shipping Solution
             </Header>
             <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              link mollis pretium. Integer tincidunt
+              It does not matter if you are shipping packages or pallets from
+              Nairobi to South Sudan or from Tanzania to the USA; we have the
+              shipping solution for your every need. Shipping is more than
+              delivering your packages or heavy freight. Shipping is getting
+              your goods to the right place, on time, hassle free.So whether
+              your parcelâ€™s high or low value, bulky or light, urgent or less
+              time-critical, we have a service that will satisfy your needs.
             </p>
           </Grid.Column>
         </Grid.Row>
