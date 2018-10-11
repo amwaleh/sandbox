@@ -6,6 +6,7 @@ const Images = styled.div`
 left:0;
 width:100%;
 height:100%;
+font-size: 1.3rem;
 min-height: 300px;
 background-image: url(${props =>
   `'https://source.unsplash.com/600x300/?${props.topic} ${Math.random()}'`});
@@ -52,15 +53,15 @@ export default class Profile extends React.Component {
         <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
           <Grid.Column
             mobile="16"
-            computer="7"
+            computer="13"
             verticalAlign="middle"
             textAlign="justified"
           >
             <Header textAlign="mobile center" color="teal" size="large">
-              Do you have a Parcel to send?
+              Do you have a Parcel or Cargo ?
             </Header>
 
-            <p style={{ margin: `10px 20px`, fontSize: "1.5rem" }}>
+            <p style={{ margin: `10px 20px`, fontSize: "1.3rem" }}>
               We are the number one in the efficient co-ordination and movement
               of freight in East Africa. Our size and experience allow us to
               tailor highly competitive solutions for all our customers. Whether
@@ -69,38 +70,32 @@ export default class Profile extends React.Component {
               and ocean freight operations, we will deliver a personalized
               service.
             </p>
-            <p
-              style={{
-                margin: `10px 20px`,
-                fontSize: "1.2rem",
-                lineHeight: "24px"
-              }}
-            >
-              Courier International , we are specialists in shipping. We have
-              extensive customs knowledge and experience. Our wide range of
-              Customs Services support a variety of customs needs, ensuring
-              smooth and efficient clearance processes. Best of all, our customs
-              expertise allows our customers to focus on their core business and
-              gain peace of mind as shipments traverse the globe!
-            </p>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row
           style={{ minHeight: "500px", fontSize: "1rem", lineHeight: "1.8" }}
         >
-          <Grid.Column computer="4" tablet="15">
+          <Grid.Column
+            computer="4"
+            tablet="15"
+            style={{ paddingBottom: "100px" }}
+          >
             <Header textAlign="mobile center" color="teal" size="large">
               WHO WE ARE
             </Header>
             <Images topic="courier,mail,cargo" style={{ height: "200px" }}>
               <Gradient />
+              We are Specialists in overnight deliveries country wide, same day
+              service within major towns in Kenya, over night deliveries within
+              East African countries and the rest of the world, warehousing and
+              logistics.
             </Images>
-            We are Specialists in overnight deliveries country wide, same day
-            service within major towns in Kenya, over night deliveries within
-            East African countries and the rest of the world, warehousing and
-            logistics.
           </Grid.Column>
-          <Grid.Column computer="4" tablet="15">
+          <Grid.Column
+            computer="4"
+            tablet="15"
+            style={{ paddingBottom: "80px" }}
+          >
             <Header textAlign="mobile center" color="teal" size="large">
               OUR SERVICES
             </Header>
@@ -111,7 +106,11 @@ export default class Profile extends React.Component {
               us to do the right thing.
             </Images>
           </Grid.Column>
-          <Grid.Column computer="4" tablet="15">
+          <Grid.Column
+            computer="4"
+            tablet="15"
+            style={{ paddingBottom: "60px" }}
+          >
             <Header textAlign="mobile center" color="teal" size="large">
               CONTACTS
             </Header>
@@ -122,8 +121,33 @@ export default class Profile extends React.Component {
             </Images>
           </Grid.Column>
         </Grid.Row>
+        <Grid.Row>
+          <Grid.Column
+            textAlign="center"
+            verticalAlign="middle"
+            style={{ height: "400px", margin: "50px 0" }}
+          >
+            {" "}
+            <Images topic="customs,tax,border">
+              <Gradient
+                direction="left"
+                style={{
+                  aligItems: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: " center"
+                }}
+              >
+                <Header size="huge" style={{ color: "white" }}>
+                  Specialist in Parcel Delivery, logistic & Storage
+                </Header>
+              </Gradient>
+            </Images>
+          </Grid.Column>
+        </Grid.Row>
+
         <Grid.Row style={{ minHeight: "500px" }}>
-          <Grid.Column computer="4" tablet="15">
+          <Grid.Column computer="7" tablet="15">
             <Images topic="customs,tax,border">
               <Gradient />
             </Images>
@@ -149,7 +173,7 @@ export default class Profile extends React.Component {
         </Grid.Row>
         <divider />
         <Grid.Row reversed="computer" style={{ minHeight: "500px" }}>
-          <Grid.Column computer="4" tablet="15">
+          <Grid.Column computer="7" tablet="15">
             <Images topic="map,shipping,freight">
               <Gradient direction={"left"} />
             </Images>
@@ -165,12 +189,13 @@ export default class Profile extends React.Component {
             </Header>
             <p style={{ margin: `10px 20px`, fontSize: "1.2rem" }}>
               It does not matter if you are shipping packages or pallets from
-              Nairobi to South Sudan or from Tanzania to the USA; we have the
-              shipping solution for your every need. Shipping is more than
-              delivering your packages or heavy freight. Shipping is getting
-              your goods to the right place, on time, hassle free.So whether
-              your parcelâ€™s high or low value, bulky or light, urgent or less
-              time-critical, we have a service that will satisfy your needs.
+              Nairobi to South Sudan or from Tanzania to the USA. We have the
+              shipping solution for your every need.
+              <br />Shipping is more than delivering your packages or heavy
+              freight. Shipping is getting your goods to the right place, on
+              time, hassle free.So whether your parcelâ€™s high or low value,
+              bulky or light, urgent or less time-critical, we have a service
+              that will satisfy your needs.
             </p>
           </Grid.Column>
         </Grid.Row>
