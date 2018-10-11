@@ -92,33 +92,30 @@ export default class Profile extends React.Component {
             <Header textAlign="mobile center" color="teal" size="large">
               WHO WE ARE
             </Header>
-            <Images topic="courier,mail,cargo">
-              <Gradient style={{ height: "200px" }} />
-              <Segment>
-                We are Specialists in overnight deliveries country wide, same
-                day service within major towns in Kenya, over night deliveries
-                within East African countries and the rest of the world,
-                warehousing and logistics.
-              </Segment>
+            <Images topic="courier,mail,cargo" style={{ height: "200px" }}>
+              <Gradient />
             </Images>
+            We are Specialists in overnight deliveries country wide, same day
+            service within major towns in Kenya, over night deliveries within
+            East African countries and the rest of the world, warehousing and
+            logistics.
           </Grid.Column>
           <Grid.Column computer="4" tablet="15">
             <Header textAlign="mobile center" color="teal" size="large">
               OUR SERVICES
             </Header>
-            <Images topic="courier,mail,cargo ">
-              <Gradient>
-                We develop and demonstrate our expertise through our innovative
-                and leading edge approach to delivering the right services.
-                Trust us to do the right thing.
-              </Gradient>
+            <Images topic="courier,mail,cargo" style={{ height: "200px" }}>
+              <Gradient />
+              We develop and demonstrate our expertise through our innovative
+              and leading edge approach to delivering the right services. Trust
+              us to do the right thing.
             </Images>
           </Grid.Column>
           <Grid.Column computer="4" tablet="15">
             <Header textAlign="mobile center" color="teal" size="large">
               CONTACTS
             </Header>
-            <Images topic="telephone ">
+            <Images topic="telephone" style={{ height: "200px" }}>
               <Gradient />
               ADRESS: Mwalimu Cooperative Building, Tom Mboya street TELEPHONE:
               +254 -713 592 975 email: info@courierint.com
