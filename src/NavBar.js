@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
+import { withRouter } from "react-router";
 
-export default class NavBar extends Component {
+class NavBar extends Component {
   state = {};
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  handleItemClick = (e, { name }) => {
+    this.props.history.push(`/${name.toLowerCase()}`);
+    this.setState({ activeItem: name });
+  };
 
   render() {
     const { activeItem } = this.state;
@@ -12,29 +16,30 @@ export default class NavBar extends Component {
     return (
       <Menu>
         <Menu.Item
-          name="editorials"
-          active={activeItem === "editorials"}
+          name="home"
+          active={activeItem === "Home"}
           onClick={this.handleItemClick}
         >
-          Editorials
+          Home
         </Menu.Item>
 
         <Menu.Item
-          name="reviews"
-          active={activeItem === "reviews"}
+          name="about"
+          active={activeItem === "About"}
           onClick={this.handleItemClick}
         >
-          Reviews
+          About
         </Menu.Item>
 
         <Menu.Item
-          name="upcomingEvents"
-          active={activeItem === "upcomingEvents"}
+          name="services"
+          active={activeItem === "services"}
           onClick={this.handleItemClick}
         >
-          Upcoming Events
+          Services
         </Menu.Item>
       </Menu>
     );
   }
 }
+export default withRouter(NavBar);
