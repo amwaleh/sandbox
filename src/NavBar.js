@@ -24,7 +24,7 @@ class NavBar extends Component {
           onClick={this.handleItemClick}
           as={Grid.Column}
           tablet={3}
-          only="desktop tablet"
+          only="computer tablet"
         >
           <Image src="http://www.courierint.com/images/logo.png" avatar />
         </Menu.Item>

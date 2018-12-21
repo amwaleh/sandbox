@@ -7,6 +7,7 @@ import Services from "./Services";
 import Profile from "./Profile";
 import NavBar from "./NavBar";
 import Contacts from "./Contacts";
+import Footer from "./footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
           <Route path="/about/" component={About} />
           <Route path="/services/" component={Services} />
           <Route path="/contacts/" component={Contacts} />
+          <Footer />
         </React.Fragment>
       </Router>
     );

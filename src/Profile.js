@@ -6,7 +6,7 @@ const Images = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  min-height: 300px;
+  min-height: 50vh;
   background-image: url(${props =>
     `'https://source.unsplash.com/600x300/?${props.topic} ${Math.random()}'`});
   background-repeat: no-repeat;

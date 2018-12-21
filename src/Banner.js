@@ -6,7 +6,7 @@ const Banner = ({ image, title }) => {
   return (
     <Segment
       style={{
-        minHeight: "350px",
+        minHeight: "50vh",
         backgroundImage: `url('${bg}')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -18,7 +18,7 @@ const Banner = ({ image, title }) => {
     >
       <div
         style={{
-          minHeight: "350px",
+          minHeight: "50vh",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
           backgroundColor: "rgba(0, 0, 0, 0.6)",
