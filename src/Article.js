@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Header } from "semantic-ui-react";
+import { Grid, Header, Icon, Divider } from "semantic-ui-react";
 import styled from "styled-components";
 
 const Content = styled.p`
@@ -11,7 +11,7 @@ const Content = styled.p`
 
 const Article = ({ header, children, icon }) => (
   <Grid.Row>
-    <Grid.Column mobile="15" computer="8" widescreen="5">
+    <Grid.Column mobile="15" tablet="10" computer="8" widescreen="5">
       <div
         centered
         color={"red"}
@@ -20,9 +20,9 @@ const Article = ({ header, children, icon }) => (
           justifyContent: "center"
         }}
       >
-        {icon && <Icon circular inverted name={icon} color="grey" />}
+        {icon && <Icon circular inverted name={icon} color="yellow" />}
       </div>
-      <Divider color="teal" inverted horizontal>
+      <Divider color="yellow" inverted horizontal>
         <Header as="h4" color="teal">
           {header}
         </Header>
@@ -31,3 +31,5 @@ const Article = ({ header, children, icon }) => (
     </Grid.Column>
   </Grid.Row>
 );
+
+export default Article;

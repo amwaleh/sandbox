@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import PropType from "prop-type";
-import Banner from "./banner";
+import Banner from "./Banner";
+import { Link } from "react-router-dom";
 import {
   Menu,
   Grid,
@@ -19,24 +20,25 @@ const H1 = styled.h1`
 `;
 const books = [
   {
+    link: "/services",
     meta: "letters, gift, uganda, kenya",
     description: "Overnight deliveries countrywide,",
     poster: "http://dummyimage.com/163x109.bmp/ff4444/ffffff"
   },
   {
-    title: "Mezzo Forte",
+    link: "/services",
     meta: "postcard, envelope",
     description: "Same day service within major towns in Kenya",
     poster: "http://dummyimage.com/203x100.bmp/cc0000/ffffff"
   },
   {
-    title: "Men with Brooms",
+    link: "/services",
     meta: "night, delivered, kilimanjaro",
     description: "overnight deliveries within East African.",
     poster: "http://dummyimage.com/182x217.png/cc0000/ffffff"
   },
   {
-    title: "Men with Brooms",
+    link: "/services",
     meta: "warehouse,garage, fleet, logistic,",
     description: "Warehousing and logistics.",
     poster: "http://dummyimage.com/182x217.png/cc0000/ffffff"
@@ -134,11 +136,20 @@ export default class Card extends React.Component {
                 to={{ transform: "translate3d(0,40px,0)" }}
               >
                 {item => props => (
-                  <BookCover computer="6" key={Math.random()} style={props}>
-                    <img
-                      src={`https://source.unsplash.com/300x300/?${item.meta}`}
-                    />
-                    <p>{item.description}</p>
+                  <BookCover
+                    computer="6"
+                    mobile="12"
+                    key={Math.random()}
+                    style={props}
+                  >
+                    <Link to={item.link}>
+                      <img
+                        src={`https://source.unsplash.com/300x300/?${
+                          item.meta
+                        }`}
+                      />
+                      <p>{item.description}</p>
+                    </Link>
                   </BookCover>
                 )}
               </Trail>
