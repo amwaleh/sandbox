@@ -47,7 +47,7 @@ const Contacts = () => (
         items={contactObj}
         keys={item => item.key}
         from={{ transform: "translate3d(-200px,-500px,0)" }}
-        to={{ transform: "translate3d(50px,100px,0)" }}
+        to={{ transform: "translate3d(50px,10px,0)" }}
       >
         {item => props => (
           <Grid.Column mobile="14" tablet="5" computer="5">

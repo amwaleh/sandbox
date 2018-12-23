@@ -20,7 +20,6 @@ class NavBar extends Component {
       >
         <Menu.Item
           name="home"
-          active={activeItem === "Home"}
           onClick={this.handleItemClick}
           as={Grid.Column}
           tablet={3}
@@ -30,7 +29,7 @@ class NavBar extends Component {
         </Menu.Item>
         <Menu.Item
           name="home"
-          active={activeItem === "Home"}
+          active={activeItem === "home"}
           onClick={this.handleItemClick}
         >
           Home
@@ -38,7 +37,7 @@ class NavBar extends Component {
 
         <Menu.Item
           name="about"
-          active={activeItem === "About"}
+          active={activeItem === "about"}
           onClick={this.handleItemClick}
         >
           About
@@ -53,7 +52,7 @@ class NavBar extends Component {
         </Menu.Item>
         <Menu.Item
           name="contacts"
-          active={activeItem === "Contacts"}
+          active={activeItem === "contacts"}
           onClick={this.handleItemClick}
         >
           Contacts

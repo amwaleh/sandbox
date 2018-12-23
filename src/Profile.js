@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Segment, Header, Container, Icon } from "semantic-ui-react";
 import styled from "styled-components";
-
+import { Trail } from "react-spring";
 const Images = styled.div`
   left: 0;
   width: 100%;

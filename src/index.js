@@ -14,7 +14,7 @@ class App extends Component {
     indicator: 0
   };
   // static propType ={
-
+  // https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
   // }
 
   onMouseMove = () => {
