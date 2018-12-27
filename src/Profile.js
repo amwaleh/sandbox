@@ -2,6 +2,8 @@ import React from "react";
 import { Grid, Segment, Header, Container, Icon } from "semantic-ui-react";
 import styled from "styled-components";
 import { Trail } from "react-spring";
+import Article from "./Article";
+
 const Images = styled.div`
   left: 0;
   width: 100%;
@@ -14,6 +16,8 @@ const Images = styled.div`
   background-size: cover;
   border-radius: 5px;
   margin-bottom: 50px;
+  font-size: 16px;
+  hypens: None;
   filter: grayscale(0.6) hue-rotate(20deg) brightness(1.15);
   &:hover {
     transition: filter 1s ease-in-out 0.6s;
@@ -34,43 +38,42 @@ const Gradient = styled.div`
 
   transition: opacity 0.8s ease-in-out 1s;
 `;
+
+const Paragraph = styled.p`
+  font-size: 16px;
+  hypens: None;
+`;
 export default class Profile extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Grid.Row reversed="computer" style={{ minHeight: "300px" }}>
+        <Grid.Row reversed="computer">
           <Grid.Column>
-            <Images topic="courier,mail,cargo ">
+            <Images
+              topic="courier,mail,cargo "
+              style={{ minHeight: "250px", height: "50%" }}
+            >
               <Gradient />
             </Images>
           </Grid.Column>
         </Grid.Row>
         <Grid centered padded="vertically" as={Container}>
-          <Grid.Row reversed="computer" style={{ minHeight: "200px" }}>
-            <Grid.Column
-              mobile="16"
-              computer="13"
-              verticalAlign="middle"
-              textAlign="justified"
-            >
-              <Header textAlign=" center" color="teal" as="h2">
-                Are you planing to send a Parcel or Cargo ?
-              </Header>
+          <Article computer="12">
+            <Header textAlign=" center" color="teal" as="h2">
+              Are you planing to send a Parcel or Cargo ?
+            </Header>
+            <Paragraph>
+              We are the number one in the efficient co-ordination and movement
+              of freight in East Africa. Our size and experience allow us to
+              tailor highly competitive solutions for all our customers. Whether
+              you are a small business looking to move less than a container, or
+              an experienced logistics professional looking to improve your air
+              and ocean freight operations, we will deliver a personalized
+              service.
+            </Paragraph>
+          </Article>
 
-              <p>
-                We are the number one in the efficient co-ordination and
-                movement of freight in East Africa. Our size and experience
-                allow us to tailor highly competitive solutions for all our
-                customers. Whether you are a small business looking to move less
-                than a container, or an experienced logistics professional
-                looking to improve your air and ocean freight operations, we
-                will deliver a personalized service.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row
-            style={{ minHeight: "500px", fontSize: "1rem", lineHeight: "1.8" }}
-          >
+          <Grid.Row style={{ minHeight: "500px", lineHeight: "1.8" }}>
             <Grid.Column
               computer="5"
               tablet="15"
@@ -178,14 +181,18 @@ export default class Profile extends React.Component {
               >
                 Customs service
               </Header>
-              <p style={{ margin: `10px 20px` }}>
+              <Paragraph>
                 Courier International , we are specialist in shipping with
                 extensive customs knowledge and experience. Our wide range of
                 Customs Services support a variety of customs needs, ensuring
-                smooth and efficient clearance processes. Best of all, our
-                customs expertise allows our customers to focus on their core
-                business and gain peace of mind as shipments traverse the globe!
-              </p>
+                smooth and efficient clearance processes.
+              </Paragraph>{" "}
+              <Paragraph>
+                {" "}
+                Above all, our customs expertise allows our customers to focus
+                on their core business and gain peace of mind as shipments
+                traverse the globe!
+              </Paragraph>
             </Grid.Column>
           </Grid.Row>
           <divider />
@@ -209,17 +216,18 @@ export default class Profile extends React.Component {
               >
                 Shipping Solution
               </Header>
-              <p style={{ margin: `10px 20px` }}>
+              <Paragraph>
                 It does not matter if you are shipping packages or pallets from
                 Nairobi to South Sudan or from Tanzania to the USA. We have the
                 shipping solution for your every need.
-                <br />
+              </Paragraph>
+              <Paragraph>
                 Shipping is more than delivering your packages or heavy freight.
                 Shipping is getting your goods to the right place, on time,
-                hassle free.So whether your parcelâ€™s high or low value, bulky
-                or light, urgent or less time-critical, we have a service that
-                will satisfy your needs.
-              </p>
+                hassle free.Whether your parcel is high or low value, bulky or
+                light, urgent or less time-critical, we have a service that will
+                satisfy your needs.
+              </Paragraph>
             </Grid.Column>
           </Grid.Row>
         </Grid>

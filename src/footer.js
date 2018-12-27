@@ -10,7 +10,7 @@ import {
 } from "semantic-ui-react";
 
 const SegmentExamplePlaceholderGrid = () => (
-  <Segment placeholder inverted color="teal">
+  <Segment placeholder inverted color="teal" style={{ marginTop: "100px" }}>
     <Grid columns={2} stackable textAlign="center">
       <Divider vertical inverted />
 

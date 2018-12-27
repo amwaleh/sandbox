@@ -9,9 +9,9 @@ const Content = styled.p`
   font-size: 1rem;
 `;
 
-const Article = ({ header, children, icon }) => (
+const Article = ({ header, children, icon , ...otherProps}) => (
   <Grid.Row>
-    <Grid.Column mobile="15" tablet="10" computer="8" widescreen="5">
+    <Grid.Column mobile="15" tablet="10" computer="8" widescreen="5" {...otherProps}>
       <div
         centered
         color={"red"}
